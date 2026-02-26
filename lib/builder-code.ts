@@ -54,4 +54,4 @@ export function buildERC8021Suffix(code: string): `0x${string}` {
 export const BUILDER_CODE = process.env.NEXT_PUBLIC_BUILDER_CODE || "bc_291jsyn1";
 export const DATA_SUFFIX = buildERC8021Suffix(BUILDER_CODE);
 export const NFT_CONTRACT = (process.env.NEXT_PUBLIC_NFT_CONTRACT ||
-  "0xc443595cb9e568ea6ee46e5d70830dd6b18a6385") as `0x${string}`;
+  "0x037E44Ca1b7A71cd4be581cCF5858a6AcD755290") as `0x${string}`;
