@@ -17,7 +17,7 @@ export default function Home() {
 
   const handleSave = useCallback(async () => {
     const result = await addFrame();
-    if (result?.added) setSaved(true);
+    if (result) setSaved(true);
   }, [addFrame]);
 
   return (
