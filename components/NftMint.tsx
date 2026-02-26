@@ -33,7 +33,7 @@ export function NftMint() {
   //  EVM 会正常执行 safeMint，忽略末尾多余的 suffix 数据。
   //  链下索引器从末尾提取 suffix 完成 builder 归因。
   // ═══════════════════════════════════════════════════════════
-  const mintCalls = useCallback(() => {
+  const mintCalls = useCallback(async () => {
     if (!address) return [];
 
     // 1. 编码 safeMint(address to) 调用
